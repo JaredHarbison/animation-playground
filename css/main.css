@@ -1,0 +1,40 @@
+body {
+  min-height: 75rem;
+  padding-top: 0.0px;
+  position: relative;
+  background-color: #eceeef; }
+
+.background {
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  min-height: 550px; }
+
+.background-rom-and-moon {
+  background-image: url(../assets/images/rom-and-moon.jpg); }
+
+.rom-crane {
+  width: 100%;
+  height: auto;
+  max-height: 350;
+  opacity: .9;
+  position: relative;
+  z-index: 1; }
+
+.rom-crane-mirror {
+  width: 100%;
+  height: auto;
+  max-height: 600;
+  opacity: .9;
+  position: relative;
+  z-index: 0; }
+
+.background-rom-cranes {
+  width: 100%;
+  height: auto;
+  max-height: 600;
+  background-image: url(../assets/images/rom-crane.png), url(../assets/images/rom-crane-mirror.png); }
