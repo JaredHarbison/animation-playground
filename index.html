@@ -10,11 +10,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
-  <body>
-    <div class="background-rom-and-moon">
-      <div>
-        <div class="background-rom-cutout">
-            <svg class="centered" id="logo" viewBox="0 0 778 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <body data-spy="scroll">
+    <div class="background-rom-and-moon">      
+      <div class="base-wrapper">
+        <div class="parallax-container">
+          <div class="wrapper">
+            <img class="background__image" src="./assets/images/rom-cutout.png">
+            <div class="middle__image">
+            <svg id="logo" viewBox="0 0 778 69" fill="none" xmlns="http://www.w3.org/2000/svg">
               <mask id="path-1-inside-1" fill="white">
                 <path d="M38.088 1.088V50.528C38.088 56.032 36.392 60.448 33 63.776C29.608 67.04 25.128 68.672 19.56 68.672C13.928 68.672 9.41604 67.008 6.02404 63.68C2.63204 60.288 0.936035 55.68 0.936035 49.856H9.67204C9.73604 53.12 10.568 55.776 12.168 57.824C13.832 59.872 16.296 60.896 19.56 60.896C22.824 60.896 25.256 59.936 26.856 58.016C28.456 56.032 29.256 53.536 29.256 50.528V1.088H38.088Z"/>
                 <path d="M94.8503 53.12H65.6663L60.2903 68H51.0743L75.2663 1.472H85.3463L109.442 68H100.226L94.8503 53.12ZM92.3543 46.016L80.2583 12.224L68.1623 46.016H92.3543Z"/>
@@ -44,12 +47,14 @@
               <path d="M679.822 68.672C673.614 68.672 667.95 67.232 662.83 64.352C657.71 61.408 653.646 57.344 650.638 52.16C647.694 46.912 646.222 41.024 646.222 34.496C646.222 27.968 647.694 22.112 650.638 16.928C653.646 11.68 657.71 7.616 662.83 4.736C667.95 1.792 673.614 0.319996 679.822 0.319996C686.094 0.319996 691.79 1.792 696.91 4.736C702.03 7.616 706.062 11.648 709.006 16.832C711.95 22.016 713.422 27.904 713.422 34.496C713.422 41.088 711.95 46.976 709.006 52.16C706.062 57.344 702.03 61.408 696.91 64.352C691.79 67.232 686.094 68.672 679.822 68.672ZM679.822 61.088C684.494 61.088 688.686 60 692.398 57.824C696.174 55.648 699.118 52.544 701.23 48.512C703.406 44.48 704.494 39.808 704.494 34.496C704.494 29.12 703.406 24.448 701.23 20.48C699.118 16.448 696.206 13.344 692.494 11.168C688.782 8.992 684.558 7.904 679.822 7.904C675.086 7.904 670.862 8.992 667.15 11.168C663.438 13.344 660.494 16.448 658.318 20.48C656.206 24.448 655.15 29.12 655.15 34.496C655.15 39.808 656.206 44.48 658.318 48.512C660.494 52.544 663.438 55.648 667.15 57.824C670.926 60 675.15 61.088 679.822 61.088Z" stroke="white" stroke-width="3" mask="url(#path-1-inside-1)"/>
               <path d="M777.563 68H768.827L733.691 14.72V68H724.955V0.991997H733.691L768.827 54.176V0.991997H777.563V68Z" stroke="white" stroke-width="3" mask="url(#path-1-inside-1)"/>
             </svg>
-          </div>
+          </div><!--<div class="foreground__image"><h1>FULL STACK WEB DEV</h1></div>-->
         </div>
-      <div class="col-lg-12" style="height: 100vh;"><h1>  </h1></div>
-      <div class="col-lg-12" style="height: 100vh;"><h1>Hello, world!</h1></div>
-      <div class="col-lg-12" style="height: 100vh;"><h1>What's up?</h1></div>
-      <div class="col-lg-12" style="height: 100vh;"><h1>NM, HBU</h1></div>
+      </div>
+    </div>
+
+      <div class="col-lg-12 example" style="height: 100vh;"><h1 class="centered">Hello, world!</h1></div>
+      <div class="col-lg-12" style="height: 100vh;"><h1 class="centered">What's up?</h1></div>
+      <div class="col-lg-12" style="height: 100vh;"><h1 class="centered">NM, HBU</h1></div>
       <img style="position: relative; z-index: 1;" class="rom-crane-mirror  bg-transparent" src="../assets/images/rom-crane-mirror.png" alt="rom-crane-mirror">
       <!--<img style="position: relative; z-index: 2;" class="rom-crane bg-transparent" src="../assets/images/rom-crane.png" alt="rom-crane">-->
     </div>
