@@ -1,24 +1,37 @@
-body {
-  min-height: 75rem;
-  padding-top: 0.0px;
-  position: relative;
-  background-color: #eceeef; }
-
 .background-rom-and-moon {
   background-image: url(../assets/images/rom-and-moon.png);
   width: 100%;
-  height: 100%;
+  height: auto;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.background-rom-cutout {
+  background-image: url(../assets/images/rom-cutout-downside.png);
+  width: 100%;
+  height: auto;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 550px; }
+  z-index: 10;
+  position: fixed; }
+
+.rom-cutout-downside {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: 100; }
 
 .rom-crane {
   width: 100%;
   height: auto;
   max-height: 350;
-  opacity: 1; }
+  opacity: 1;
+  position: fixed;
+  bottom: 0px;
+  left: 20px; }
 
 .rom-crane-mirror {
   width: 100%;
@@ -34,7 +47,7 @@ body {
 
 /* Helper Function */
 /* Parallax Styles */
-.parallax-container {
+.parallax-banner-container {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -44,7 +57,7 @@ body {
   perspective-origin: 0%;
   -webkit-overflow-scrolling: touch; }
 
-.image, .background_banner_image, .middle_banner_image, .foreground_banner_image {
+.image, .background_banner_image, .middle_banner_image, .foreground_banner_image, .background_footer_image, .middle_footer_image, .foreground_footer_iamge {
   position: absolute;
   transform-origin: 0 50%;
   height: 100vh; }
@@ -57,8 +70,34 @@ body {
 
 .middle_banner_image {
   top: 20%;
+  position: sticky;
+  z-index: 10;
   transform: translateZ(5px) scale(0.16667); }
 
 .foreground_banner_image {
+  position: sticky;
+  z-index: 30;
   top: 30%;
+  transform: translateZ(2px) scale(0.66667); }
+
+.parallax-footer-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  perspective: 6px;
+  perspective-origin: 0%;
+  -webkit-overflow-scrolling: touch; }
+
+.background_footer_image {
+  transform: translateZ(1px) scale(0.16667);
+  top: 100px; }
+
+.middle_footer_image {
+  top: 100px;
+  transform: translateZ(5px) scale(0.16667); }
+
+.foreground_footer_iamge {
+  top: 10px;
   transform: translateZ(2px) scale(0.66667); }
