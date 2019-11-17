@@ -1,7 +1,8 @@
 .background-rom-and-moon {
   background-image: url(../assets/images/rom-and-moon.png);
   width: 100%;
-  height: auto;
+  height: 100vh;
+  position: fixed;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
@@ -10,94 +11,28 @@
 .background-rom-cutout {
   background-image: url(../assets/images/rom-cutout-downside.png);
   width: 100%;
-  height: auto;
+  height: 100vh;
+  position: fixed;
+  z-index: 5;
+  background-color: transparent;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  z-index: 10;
-  position: fixed; }
+  background-size: cover; }
 
-.rom-cutout-downside {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  z-index: 50; }
+.b {
+  position: relative; }
 
-.rom-crane {
-  width: 100%;
-  height: auto;
-  max-height: 350;
-  opacity: 1;
-  position: fixed;
-  bottom: 0px;
-  left: 60px; }
+.c {
+  position: relative;
+  z-index: 10; }
 
-.rom-crane-mirror {
-  width: 100%;
-  height: auto;
-  max-height: 600;
-  opacity: 1; }
+.d {
+  position: relative; }
 
-.base-wrapper {
+.a {
+  position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100vh; }
-
-/* Helper Function */
-/* Parallax Styles */
-.parallax-banner-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  perspective: 6px;
-  perspective-origin: 0%;
-  -webkit-overflow-scrolling: touch; }
-
-.image, .background_banner_image, .middle_banner_image, .foreground_banner_image, .background_footer_image, .middle_footer_image, .foreground_footer_iamge {
-  position: absolute;
-  transform-origin: 0 50%;
-  height: 100vh; }
-
-.background_banner_image {
-  transform: translateZ(0px) scale(1);
-  opacity: .8;
-  width: 100%;
-  height: auto; }
-
-.middle_banner_image {
-  top: 20%;
-  position: sticky;
-  z-index: 10;
-  transform: translateZ(5px) scale(0.16667); }
-
-.foreground_banner_image {
-  position: sticky;
-  z-index: 30;
-  top: 30%;
-  transform: translateZ(2px) scale(0.66667); }
-
-.parallax-footer-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  perspective: 6px;
-  perspective-origin: 0%;
-  -webkit-overflow-scrolling: touch; }
-
-.background_footer_image {
-  transform: translateZ(1px) scale(0.16667);
-  top: 100px; }
-
-.middle_footer_image {
-  top: 100px;
-  transform: translateZ(5px) scale(0.16667); }
-
-.foreground_footer_iamge {
-  top: 10px;
-  transform: translateZ(2px) scale(0.66667); }
+  justify-content: center;
+  height: 75vh; }
