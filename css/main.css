@@ -20,19 +20,38 @@
   background-position: center;
   background-size: cover; }
 
-.b {
-  position: relative; }
-
-.c {
-  position: relative;
-  z-index: 10; }
-
-.d {
-  position: relative; }
-
 .a {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 75vh; }
+
+.b {
+  position: relative; }
+
+.c {
+  position: relative;
+  z-index: 15; }
+
+.d {
+  position: relative; }
+
+.e {
+  position: relative; }
+
+.rom-crane {
+  position: fixed;
+  z-index: 10;
+  width: 120%;
+  left: -35%;
+  bottom: 15%;
+  height: auto; }
+
+.rom-crane-mirror {
+  position: fixed;
+  z-index: 30;
+  width: 150%;
+  height: auto;
+  bottom: -15%;
+  left: 5%; }
