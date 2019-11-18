@@ -12,38 +12,31 @@
         crossorigin="anonymous"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T">
+  <link rel="stylesheet" 
+        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" >
+  <link rel="stylesheet" 
+        href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://kit.fontawesome.com/61bbbbc2a5.js" 
+        crossorigin="anonymous"></script>
 </head>
-
-<!------------------------------------------------------------------------------------------
--------------------                                                      -------------------
-------------------------------------------------------------------------------------------->
-
 <body data-spy="scroll">
 
 <!------------------------------------------------------------------------------------------
-------------------- set ROM background                                   ------------------- 
+--------------- Royal Ontario Museum background & overlay of background cutout ------------- 
 ------------------------------------------------------------------------------------------->
 
-<div class="background-rom-and-moon">
-</div>
+<div class="background-rom-and-moon"></div>
+<div class="background-rom-cutout"></div>
 
 <!------------------------------------------------------------------------------------------
-------------------- layered cutout from ROM background                  ------------------- 
+--------------- Will be a parallax container (image, name, title, icons)     --------------- 
 ------------------------------------------------------------------------------------------->
-
-<div class="background-rom-cutout">
-</div>
-
-<!------------------------------------------------------------------------------------------
-------------------- parallax container (name, title, icons)             ------------------- 
-------------------------------------------------------------------------------------------->
-
-<div class="a text-white">
-    <h1>HELLO WORLD</h1>
+<div class="a">
+  <img class="rom-cutout-upside" src="../assets/images/rom-cutout.png">
 </div>
   
 <!------------------------------------------------------------------------------------------
-------------------- layered under ROM                                   ------------------- 
+--------------- Will be an info panel layered behind ROM                      --------------- 
 ------------------------------------------------------------------------------------------->
 
 <div class="b text-center text-white">
@@ -70,7 +63,7 @@
 </div>
 
 <!------------------------------------------------------------------------------------------
-------------------- layered over ROM                                     ------------------- 
+--------------- Will be an info panel layered ahead of ROM                   --------------- 
 ------------------------------------------------------------------------------------------->
 <div class="c text-center text-white">
   <h1>01</h1>
@@ -96,9 +89,9 @@
 </div>
 
 <!------------------------------------------------------------------------------------------
--------------------  layered under ROM                                   ------------------- 
+--------------- Will be an info panel layered behind ROM                     --------------- 
 ------------------------------------------------------------------------------------------->
-
+ 
 <div class="d text-center text-white">
   <h1>01</h1>
   <h1>02</h1>
@@ -117,18 +110,33 @@
   <h1>15</h1>
   <h1>16</h1>
   <h1>17</h1>
-  <h1>18</h1>
+  <h1>18</h1> 
   <h1>19</h1>
   <h1>20</h1>
-  <img class="rom-crane-mirror" src="../assets/images/rom-crane-mirror.png">
 </div>
 
-<div class="e">
-  <img class="rom-crane" src="../assets/images/rom-crane.png">
+<!------------------------------------------------------------------------------------------
+--------------- Crane images layered behind and ahead of ROM w/ text animation   ----------- 
+------------------------------------------------------------------------------------------->
+ 
+<div class="">
+  <img data-aos="fade-right" data-aos-duration="3000" class="rom-crane" src="../assets/images/rom-crane.png">
+  <div style="height:35vh"></div>
+  <img data-aos="fade-left" data-aos-duration="2000" class="rom-crane-mirror" src="../assets/images/rom-crane-mirror.png">
 </div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+<script crossorigin="anonymous"
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"></script>
+<script crossorigin="anonymous" 
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"   
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"></script>
+<script crossorigin="anonymous" 
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init();</script> 
 </body>
 </html>
